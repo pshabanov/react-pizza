@@ -4,7 +4,7 @@ import PizzaItem from "./PizzaItem";
 const PizzaList = ({items}) => {
     return (
         <div className="content__items">
-            {items.map(pizza=><PizzaItem/>)}
+            {items.map(pizza=><PizzaItem key={pizza.id} {...pizza}/>)}
         </div>
     );
 };

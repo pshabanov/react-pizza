@@ -3,12 +3,12 @@ import Categories from "./components/Categories";
 import Sort from "./components/Sort";
 import PizzaList from "./components/PizzaList";
 import {useState} from "react";
+import pizzas from './pizzas'
 
 
 function App() {
 
-    const [pizza, setPizza] =  useState([1,2,3,4,5,6,7,8,9,10,11])
-
+    const [pizza, setPizza] = useState(pizzas)
     return (
         <div className="wrapper">
             <Header/>
